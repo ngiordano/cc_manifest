@@ -18,7 +18,7 @@
            remote="github"
            sync-j="16" />
 
-  <project path="build" name="ngiordano/build" revision="master" />
+  <project path="build" name="ngiordano/build" revision="master">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
