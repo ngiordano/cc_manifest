@@ -11,14 +11,11 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <remote  name="paranoid"
-           fetch="ssh://git@bitbucket.org/paranoidandroid/" />
-
   <default revision="refs/heads/jellybean"
            remote="github"
            sync-j="16" />
 
-  <project path="build" name="ngiordano/build" revision="master">
+  <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -37,6 +34,8 @@
   <project path="device/google/accessory/arduino" name="CyanogenMod/android_device_google_accessory_arduino" />
   <project path="device/google/accessory/demokit" name="CyanogenMod/android_device_google_accessory_demokit" />
   <project path="device/sample" name="CyanogenMod/android_device_sample" />
+  <project path="device/samsung/aries-common" name="ngiordano/device_samsung_aries-common" revision="master" />
+  <project path="device/samsung/vibrantmtd" name="ngiordano/device_samsung_vibrantmtd" revision="master" />
   <project path="device/ti/panda" name="CyanogenMod/android_device_ti_panda" />
   <project path="docs/source.android.com" name="CyanogenMod/android_docs_source.android.com" />
   <project path="external/aac" name="CyanogenMod/android_external_aac" />
@@ -320,14 +319,13 @@
   <project path="system/netd" name="CyanogenMod/android_system_netd" />
   <project path="system/security" name="CyanogenMod/android_system_security" />
   <project path="system/vold" name="CyanogenMod/android_system_vold" />
-  <project path="vendor/cm" name="ngiordano/cm_vendor" revision="master" />
-  <project path="vendor/pa" name="ngiordano/pa_vendor" revision="master" />
+  <project path="vendor/cc" name="ngiordano/cc_vendor" revision="master" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
 
-  <project path="paranoid" name="ParanoidAndroid/paranoid">
+  <project path="cc" name="ngiordano/cc_manifest">
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
 
