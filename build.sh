@@ -26,7 +26,7 @@ res1=$(date +%s.%N)
 echo -e "${cya}Building ${bldcya}CookiesAndCream";
 
 # setup environment
-echo -e "${bldblu}Setting up environment ${txtrst}"
+echo -e "${bldblu}Setting up environment"
 . build/envsetup.sh
 
 # lunch device
